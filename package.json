@@ -1,0 +1,21 @@
+{
+  "name": "@basalam/utils",
+  "version": "0.0.1",
+  "description": "BASALAM!",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "keywords": [
+    "basalam",
+    "utils",
+    "js-utils"
+  ],
+  "author": "Sina.",
+  "license": "MIT",
+  "devDependencies": {
+    "np": "^7.0.0"
+  }
+}
