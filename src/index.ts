@@ -1,11 +1,11 @@
 import stripText from "./stripText";
 import rialToToman from "./rialToToman";
-import numberSeperator from "./numberSeperator"
+import numberSeparator from "./numberSeparator"
 import convertToEnDigit from "./convertToEnDigit";
 
 export {
   stripText,
   rialToToman,
-  numberSeperator,
+  numberSeparator,
   convertToEnDigit,
 }
