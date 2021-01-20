@@ -1,7 +1,7 @@
 {
-  "name": "@basalam/utils",
+  "name": "achar-js",
   "version": "0.0.1",
-  "description": "BASALAM!",
+  "description": "Free and open-source utility package",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -11,10 +11,14 @@
   "keywords": [
     "basalam",
     "utils",
-    "js-utils"
+    "js-utils",
+    "achar",
+    "achar-js",
+    "achar.js",
+    "🔧"
   ],
-  "author": "Sina.",
-  "license": "MIT",
+  "author": "Yasin Silavi",
+  "license": "GPL-2.0",
   "devDependencies": {
     "np": "^7.0.0"
   }
