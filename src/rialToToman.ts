@@ -3,6 +3,8 @@
  * @param {Object} [options] - currency or separator option [optional]
  */
 
+import numberSeparator from "./numberSeparator"
+
 interface Options {
   currency: boolean;
   separator: boolean;
@@ -15,12 +17,11 @@ function rialToToman(price: string | number, options?: Options) {
   const separator = options?.separator;
 
   price = typeof price === "string" ? parseInt(price) / 10 : price / 10;
-  const withSeparator = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
   return currency && separator
-    ? `${withSeparator} تومان`
+    ? `${numberSeparator(price)} تومان`
     : !currency && separator
-    ? withSeparator
+    ? numberSeparator(price)
     : currency && !separator
     ? `${price} تومان`
     : price;
