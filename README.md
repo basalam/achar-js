@@ -1,9 +1,7 @@
 # Achar-js 🔧
-
-
+Free and open-source utility package
 
 ## Installation
-
 Using npm:
 
 ```shell
@@ -18,7 +16,6 @@ yarn add achar-js
 
 
 ## Usage
-
 ```javascript
 import { rialToToman } from "achar-js"
 
