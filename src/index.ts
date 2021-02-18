@@ -4,7 +4,7 @@ import rialToToman from "./rialToToman";
 import numberSeparator from "./numberSeparator"
 import convertToEnDigit from "./convertToEnDigit";
 import generateUniqueId from "./generateUniqueId";
-import rialToPerfectToman from "./rialToPerfectToman"
+import rialToHumanizeToman from "./rialToHumanizeToman"
 
 export {
   isObject,
@@ -13,5 +13,5 @@ export {
   numberSeparator,
   convertToEnDigit,
   generateUniqueId,
-  rialToPerfectToman,
+  rialToHumanizeToman,
 }

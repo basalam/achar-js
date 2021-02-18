@@ -3,8 +3,8 @@
  * @returns {String} This function returns string with separator
  */
 
-function numberSeparator(num: string | number): string {
-  if (!num || typeof num != "number" && typeof num != "string") return "";
+function numberSeparator(num: string | number = ""): string {
+  if (typeof num != "number" && typeof num != "string") return "";
 
   return typeof num === "number"
   ? num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
