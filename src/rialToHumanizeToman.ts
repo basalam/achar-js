@@ -4,8 +4,8 @@
 
 import rialToToman from "./rialToToman";
 
-function rialToPerfectToman(price: string | number) {
+function rialToHumanizeToman(price: string | number = NaN) {
   return rialToToman(price, { currency: true, separator: true });
 }
 
-export default rialToPerfectToman;
+export default rialToHumanizeToman;

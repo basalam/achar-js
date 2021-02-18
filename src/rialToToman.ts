@@ -10,8 +10,8 @@ interface Options {
   separator: boolean;
 }
 
-function rialToToman(price: string | number, options?: Options) {
-  if (!price || typeof price != "number" && typeof price != "string") return ""
+function rialToToman(price: string | number = "", options?: Options) {
+  if (typeof price != "number" && typeof price != "string") return ""
 
   const currency = options?.currency;
   const separator = options?.separator;
