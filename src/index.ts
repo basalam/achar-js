@@ -3,6 +3,8 @@ import stripText from "./stripText";
 import rialToToman from "./rialToToman";
 import numberSeparator from "./numberSeparator"
 import convertToEnDigit from "./convertToEnDigit";
+import generateUniqueId from "./generateUniqueId";
+import rialToPerfectToman from "./rialToPerfectToman"
 
 export {
   isObject,
@@ -10,4 +12,6 @@ export {
   rialToToman,
   numberSeparator,
   convertToEnDigit,
+  generateUniqueId,
+  rialToPerfectToman,
 }
