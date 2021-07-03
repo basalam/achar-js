@@ -5,6 +5,7 @@ import numberSeparator from "./numberSeparator"
 import makeRandomString from "./makeRandomString";
 import convertToEnDigit from "./convertToEnDigit";
 import generateUniqueId from "./generateUniqueId";
+import convertToSnakeCase from "./convertToSnakeCase"
 import rialToHumanizeToman from "./rialToHumanizeToman"
 
 export {
@@ -15,5 +16,6 @@ export {
   convertToEnDigit,
   makeRandomString,
   generateUniqueId,
+  convertToSnakeCase,
   rialToHumanizeToman,
 }
