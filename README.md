@@ -59,12 +59,13 @@ import * as achar from "achar-js"
 
 achar.rialToToman(20000, { currencry: true, separator: true }) // تومان 2,000
 
-// Single use
-import { rialToToman } from "achar-js"
+// Import multiple utilities
+import { rialToToman, isObject } from "achar-js"
 
+isObject({}) // true
 rialToToman(20000, { currencry: true, separator: true }) // تومان 2,000
 
-// Single use (One util)
+// Single use (Default Exported)
 import rialToToman from "achar-js/rialToToman"
 
 rialToToman(20000, { currencry: true, separator: true }) // تومان 2,000
