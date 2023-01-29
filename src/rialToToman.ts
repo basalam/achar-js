@@ -1,17 +1,21 @@
-/**
- * @param {(number | string)} price - The price you want to convert into Tomans.
- * @param {Object} [options] - currency or separator option [optional]
- */
-
-import numberSeparator from "./numberSeparator"
+import { numberSeparator } from "./index";
 
 interface Options {
   currency: boolean;
   separator: boolean;
 }
 
-function rialToToman(price: string | number = "", options?: Options) {
-  if (typeof price != "number" && typeof price != "string") return ""
+/**
+ * Converts Rials to Tomans
+ * @param {number | string} price - The price you want to convert into Tomans.
+ * @param {Object} [options] - currency or separator option [optional]
+ * @param {boolean} options.currency - currency or separator option [optional]
+ * @param {boolean} options.separator - currency or separator option [optional]
+ */
+export default function rialToToman(price: string | number = "", options?: Options) {
+  if (typeof price != "number" && typeof price != "string") {
+    return "";
+  }
 
   const currency = options?.currency;
   const separator = options?.separator;
@@ -26,5 +30,3 @@ function rialToToman(price: string | number = "", options?: Options) {
     ? `${price} تومان`
     : price;
 }
-
-export default rialToToman;

@@ -3,8 +3,6 @@
  * @returns {boolean} boolean (true / false)
  */
 
-function isObject(value: any): boolean {
+export default function isObject(value: any): boolean {
   return value && typeof value === "object" && value.constructor === Object;
 }
-
-export default isObject;

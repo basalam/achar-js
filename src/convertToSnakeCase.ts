@@ -1,10 +1,35 @@
-function convertToSnakeCase(text: string): string {
-  if (!text) return "";
+import { isObject } from "./index";
 
-  // Remove everything exept Alphabet, numbers or space character
-  text = text.replace(/[^A-Z|^a-z|^1-9|^\s]/g, "");
+/**
+ * Converts snake_case words to camelCase
+ * @param {*} entry - You can pass objects, arrays or strings
+ * @returns {*}
+ */
+export default function snakeToCamelCase(entry: any): any {
+  const snakeToCamel = (text: string) => {
+    return text.replace(/(\_\w)/g, (word: string) => word[1].toUpperCase());
+  };
 
-  return text.replace(/\s/g, "_").toLowerCase();
+  if (typeof entry === "string") {
+    return snakeToCamel(entry);
+  }
+
+  if (isObject(entry)) {
+    const clone: any = {};
+
+    for (const key in entry) {
+      clone[snakeToCamel(key)] =
+        typeof entry[key] === "string"
+          ? entry[key]
+          : snakeToCamelCase(entry[key]);
+    }
+
+    return clone;
+  }
+
+  if (Array.isArray(entry)) {
+    return entry.map((i) => snakeToCamel(i));
+  }
+
+  return entry;
 }
-
-export default convertToSnakeCase;

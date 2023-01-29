@@ -1,10 +1,10 @@
 /**
- * @param {number} length - length of generated id
- * @returns {string} string - random unique id
+ * Generates a unique id with the requested length
+ * @param {number} length - Length of generated id
+ * @returns {string} Unique id
  */
-
-function generateUniqueId(length: number = 8) {
+export default function generateUniqueId(length: number = 8): string {
   return Math.random().toString(36).substr(2, length);
 }
 
-export default generateUniqueId;
+console.log(generateUniqueId(15));

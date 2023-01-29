@@ -1,11 +1,9 @@
-/**
- * @param {(number | string)} price - The price you want to convert into Tomans.
- */
-
 import rialToToman from "./rialToToman";
 
-function rialToHumanizeToman(price: string | number = NaN) {
+/**
+ * Converts Rials to Tomans and adds "تومان" sign and separator
+ * @param {number | string} price - The price you want to convert into Tomans.
+ */
+export default function rialToHumanizeToman(price: string | number) {
   return rialToToman(price, { currency: true, separator: true });
 }
-
-export default rialToHumanizeToman;

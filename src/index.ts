@@ -1,21 +1,9 @@
-import isObject from "./isObject"
-import stripText from "./stripText";
-import rialToToman from "./rialToToman";
-import numberSeparator from "./numberSeparator"
-import makeRandomString from "./makeRandomString";
-import convertToEnDigit from "./convertToEnDigit";
-import generateUniqueId from "./generateUniqueId";
-import convertToSnakeCase from "./convertToSnakeCase"
-import rialToHumanizeToman from "./rialToHumanizeToman"
 
-export {
-  isObject,
-  stripText,
-  rialToToman,
-  numberSeparator,
-  convertToEnDigit,
-  makeRandomString,
-  generateUniqueId,
-  convertToSnakeCase,
-  rialToHumanizeToman,
-}
+export { default as isObject } from "./isObject";
+export { default as stripText } from "./stripText";
+export { default as rialToToman } from "./rialToToman";
+export { default as numberSeparator } from "./numberSeparator";
+export { default as toEnglishDigits } from "./toEnglishDigits";
+export { default as generateUniqueId } from "./generateUniqueId";
+export { default as convertToSnakeCase } from "./convertToSnakeCase";
+export { default as rialToHumanizeToman } from "./rialToHumanizeToman";
