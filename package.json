@@ -20,6 +20,7 @@
   "author": "Yasin Silavi",
   "license": "GPL-2.0",
   "devDependencies": {
-    "np": "^7.0.0"
+    "np": "^7.0.0",
+    "prettier": "^2.8.3"
   }
 }
