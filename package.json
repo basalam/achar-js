@@ -1,8 +1,8 @@
 {
   "name": "achar-js",
-  "version": "0.3.0",
-  "description": "Free and open-source utility package",
-  "main": "index.js",
+  "version": "0.4.0",
+  "description": "All the utility functions you'll need to build a fully functional e-commerce site",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
