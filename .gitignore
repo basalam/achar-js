@@ -1,4 +1,2 @@
 node_modules
-
-# ignore js files
-*.js
+dist
