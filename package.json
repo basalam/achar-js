@@ -3,6 +3,7 @@
   "version": "0.4.0",
   "description": "All the utility functions you'll need to build a fully functional e-commerce site",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
